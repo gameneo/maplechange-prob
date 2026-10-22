@@ -1,0 +1,17 @@
+key,value
+gradeHuntLow,45
+gradeHuntMid,45
+gradeHuntHigh,9.2
+gradeBossLow,25
+gradeBossMid,55
+gradeBossHigh,19
+gradeLowMin,96
+gradeLowMax,98
+gradeMidMin,99
+gradeMidMax,101
+gradeHighMin,102
+gradeHighMax,105
+gradeTopMin,106
+gradeTopMax,108
+gradeStepBelow,17
+gradeShopPct,90

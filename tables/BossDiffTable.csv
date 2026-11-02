@@ -43,3 +43,16 @@ griffey,H,eq_weapon_120:1:12.5625|2000005:50:100|eq_earring_120:1:11.25|eq_overa
 pianus,H,eq_weapon_120:1:21.8625|eq_overall_120:1:4.2375|2000005:75:100|eq_earring_120:1:11.25|eq_ring_120:1:11.25|sc_earring_ms_60:1:22.5|sc_weapon_pm_d30:1:2.25|sc_earring_ms_d30:1:1.5|sc_earring_ms_d70:1:22.5|sc_overall_ms_d30:1:2.25
 papulatus,H,eq_shoes_120:1:4.1|eq_overall_120:1:8.225|eq_weapon_120:1:25|eq_glove_120:1:0.825|eq_earring_120:1:12.725|eq_ring_120:1:12.725|sc_earring_ms_60:1:15|sc_pendant_ms_100:1:15|sc_pendant_ms_60:1:15|sc_pendant_ms_10:1:15|sc_shoes_ms_d70:1:15|sc_shoes_ms_d30:1:1.75|sc_overall_ms_d30:1:1.75|sc_pendant_ms_d30:1:1.75
 leviathan,H,eq_weapon_120:1:17.275|eq_earring_120:1:7.675|eq_ring_120:1:7.675|eq_overall_120:1:1.45|eq_glove_120:1:1.45|eq_shoes_120:1:1.45|eq_cape_120:1:1.425|sc_ring_ms_100:1:15|sc_ring_ms_60:1:15|sc_ring_ms_10:1:15|sc_weapon_pm_d70:1:15|sc_weapon_pm_d30:1:1.75|sc_glove_pm_d30:1:1.75|sc_shield_pm_d30:1:1.75
+zakum,H,eq_cap_100:1:100|eq_cap_100:1:30|eq_weapon_120:1:23|eq_earring_120:1:9.125|eq_ring_120:1:9.125|eq_overall_120:1:1.1|eq_glove_120:1:1.1|eq_shoes_120:1:1.075|eq_cape_120:1:1.075|sc_ring_ms_100:1:25|sc_ring_ms_60:1:25|sc_ring_ms_10:1:25|sc_cap_ms_d70:1:25|sc_cap_ms_d30:1:3.5|sc_weapon_pm_d30:1:3.5|sc_ring_ms_d30:1:3.5|sc_ring_ms_d70:1:5
+pqboss_kingslime,N,
+pqboss_alishar,N,
+pqboss_papapixie,N,
+pqboss_davyjohn,N,
+pqboss_poisongolem,N,
+pqboss_frankenroid,N,
+pqboss_kingslime,H,eq_weapon_120:1:20|eq_earring_120:1:6|sc_belt_ms_100:1:20|sc_belt_ms_60:1:20|sc_belt_ms_10:1:20|sc_shield_pm_100:1:20|sc_shield_pm_60:1:20|sc_shield_pm_10:1:20|sc_belt_ms_d70:1:20|sc_shield_pm_d70:1:8|sc_belt_ms_d30:1:2.8|sc_shield_pm_d30:1:2.8
+pqboss_alishar,H,eq_weapon_120:1:20|eq_earring_120:1:6|sc_belt_ms_100:1:20|sc_belt_ms_60:1:20|sc_belt_ms_10:1:20|sc_shield_pm_100:1:20|sc_shield_pm_60:1:20|sc_shield_pm_10:1:20|sc_belt_ms_d70:1:20|sc_shield_pm_d70:1:8|sc_belt_ms_d30:1:2.8|sc_shield_pm_d30:1:2.8
+pqboss_papapixie,H,eq_weapon_120:1:20|eq_earring_120:1:6|sc_belt_ms_100:1:20|sc_belt_ms_60:1:20|sc_belt_ms_10:1:20|sc_shield_pm_100:1:20|sc_shield_pm_60:1:20|sc_shield_pm_10:1:20|sc_belt_ms_d70:1:20|sc_shield_pm_d70:1:8|sc_belt_ms_d30:1:2.8|sc_shield_pm_d30:1:2.8
+pqboss_davyjohn,H,eq_weapon_120:1:20|eq_earring_120:1:6|sc_belt_ms_100:1:20|sc_belt_ms_60:1:20|sc_belt_ms_10:1:20|sc_shield_pm_100:1:20|sc_shield_pm_60:1:20|sc_shield_pm_10:1:20|sc_belt_ms_d70:1:20|sc_shield_pm_d70:1:8|sc_belt_ms_d30:1:2.8|sc_shield_pm_d30:1:2.8
+pqboss_poisongolem,H,eq_weapon_120:1:20|eq_earring_120:1:6|sc_belt_ms_100:1:20|sc_belt_ms_60:1:20|sc_belt_ms_10:1:20|sc_shield_pm_100:1:20|sc_shield_pm_60:1:20|sc_shield_pm_10:1:20|sc_belt_ms_d70:1:20|sc_shield_pm_d70:1:8|sc_belt_ms_d30:1:2.8|sc_shield_pm_d30:1:2.8
+pqboss_frankenroid,H,eq_weapon_120:1:20|eq_earring_120:1:6|sc_belt_ms_100:1:20|sc_belt_ms_60:1:20|sc_belt_ms_10:1:20|sc_shield_pm_100:1:20|sc_shield_pm_60:1:20|sc_shield_pm_10:1:20|sc_belt_ms_d70:1:20|sc_shield_pm_d70:1:8|sc_belt_ms_d30:1:2.8|sc_shield_pm_d30:1:2.8

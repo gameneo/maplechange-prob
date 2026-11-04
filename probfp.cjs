@@ -178,11 +178,14 @@ function build() {
     if (r.boss && (d === "N" || d === "H")) (diffs[r.boss] = diffs[r.boss] || {})[d] = r;
   }
   const bossOpen = (r) => r.dev !== "1" || (testView && !r.id.startsWith("test_"));
+  //   rp-bossswap-shut-1104(오너 장부 7721 Q892 «38»): 닫힌 칸(BossDiffTable shut 1 — 입장 안 됨 = 나오지 않는 보상) = 줄 없음(ProbLogic.Make · BossLogic.Shut과 같음 · 칸 없는 옛 표 = 다 열림)
+  const shut = (d) => d !== undefined && d.shut === "1";
   for (const r of csv("BossTable")) {
     if (!r.id || !bossOpen(r)) continue;
     const per = diffs[r.id] || {};
-    const sets = [[r.id, per.N && per.N.rewards ? per.N.rewards : r.rewards]];
-    if (per.H) sets.push([r.id + "_h", per.H.rewards ? per.H.rewards : r.rewards]);
+    const sets = [];
+    if (!shut(per.N)) sets.push([r.id, per.N && per.N.rewards ? per.N.rewards : r.rewards]);
+    if (per.H && !shut(per.H)) sets.push([r.id + "_h", per.H.rewards ? per.H.rewards : r.rewards]);
     for (const [key, rewards] of sets) {
       for (const part of (rewards || "").split("|").filter(Boolean)) {
         const m = /^([^:]+):?(\d*):?([\d.]*)$/.exec(part);

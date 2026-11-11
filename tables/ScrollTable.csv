@@ -55,6 +55,7 @@ sc_ring_ms_10,반지 주스탯 주문서 10%,ring,normal,10,0,
 sc_ring_ms_d70,반지 주스탯 주문서 70%,ring,dark,70,30,
 sc_ring_ms_d30,반지 주스탯 주문서 30%,ring,dark,30,50,
 2041200,드래곤의 돌,eq_pendant_120,only,100,0,
+2041200c,강력한 드래곤의 돌,eq_pendant_120c,only,100,0,
 sc_white,백의 주문서 10%,*,white,10,10,
 2049000,백의 주문서 10%,*,white,10,10,sc_white
 2470000,황금 망치,*,hammer,100,0,

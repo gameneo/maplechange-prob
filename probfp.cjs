@@ -14,6 +14,8 @@
 //     게임 창 [주문서] 탭 끝 줄로 보이므로 주문서 지문에도 넣음(scroll v2 → v3 · 전체 v4 그대로 — 줄 모양 같음)
 //   rp-prob-myhunt-tier-1025(장부 5950): 나만의 사냥터 1·2단계 = 모든 M 줄 확률 × 단계 배율(그 단계 몹 HP ÷ 3단계 몹 HP · MobSpecTable.csv hunt200·hunt200t1·hunt200t2 hp)
 //     C|myhuntTierDrop<단계>|<배율 ×1000> (전체만) · M|rare_t<단계>|<아이템>|<ppm>|0 (전체 + 주문서 — 창 단계별 줄 · ppm = rate × 배율 ÷ 1000 × dropRate) · 줄 모양 같아 버전 그대로
+//   rp-myhunt250-1112(장부 8474): 나만의 사냥터 4단계(레벨 250) = 단계 4 C·M|rare_t4 줄(배율 = hunt250 HP ÷ hunt200 HP · 1~1.5로 자름 · 1보다 큼) +
+//     M|<kind>_t4|<아이템>|<ppm>|<고르는 개수> = MyHuntDropTable tier 칸 4 줄(4단계에만 고르는 120제 장비·펫 장비 주문서 · ppm = rate × dropRate — 4단계 배율은 C 줄) · 줄 모양 같아 버전 그대로
 //   rp-prob-nodrop(오너 2026-09-30): 게임 창 = 주문서·캐시 확률만, 몬스터·보스 드롭 확률은 길라잡이에 → 드롭 줄은 전체 지문(이 저장소)에만.
 // 규칙 = Docs/research/prob/spec.md.
 const fs = require("fs");
@@ -138,13 +140,16 @@ function build() {
   //   MobSpecTable hunt200t1·hunt200t2 ÷ hunt200) → C|myhuntTierDrop<단계>|<배율 ×1000 반올림> · 단계 줄이 없거나 배율 1 이상 = 그 단계 줄 없음(게임도 곱하지 않음)
   const specHp = {};
   for (const r of csv("MobSpecTable")) if (r.id) specHp[r.id] = num(r.hp);
+  // rp-myhunt250-1112: 4단계 = hunt250 줄 HP 비율(MyHuntLogic.DropMulOf 4 — 1~T4DropMax 1.5로 자름 · 1보다 큰 배율도 줄) · 배율 1000(= 3단계) = 줄 없음
+  const T4_DROP_MAX = 1.5;
   const tiers = [];
-  for (const t of [1, 2]) {
+  for (const t of [1, 2, 4]) {
     const base = specHp.hunt200;
-    const hp = specHp["hunt200t" + t];
+    const hp = t === 4 ? specHp.hunt250 : specHp["hunt200t" + t];
     if (!(base > 0) || hp === undefined) continue;
-    const m = Math.floor(Math.max(0, Math.min(1, hp / base)) * 1000 + 0.5);
-    if (m > 0 && m < 1000) tiers.push({ t, m });
+    const r = t === 4 ? Math.max(1, Math.min(T4_DROP_MAX, hp / base)) : Math.max(0, Math.min(1, hp / base));
+    const m = Math.floor(r * 1000 + 0.5);
+    if (m > 0 && m !== 1000) tiers.push({ t, m });
   }
   for (const tm of tiers) rows.push(`C|myhuntTierDrop${tm.t}|${tm.m}`);
   const mhPick = {};
@@ -153,7 +158,9 @@ function build() {
     if (!r.kind || !r.itemId || mhSeen.has(r.itemId)) continue;
     mhSeen.add(r.itemId);
     if (mhPick[r.kind] === undefined) mhPick[r.kind] = Math.floor(num(r.pick));
-    const line = `M|${r.kind}|${r.itemId}|${ppm(num(r.rate) * mul)}|${mhPick[r.kind]}`;
+    // rp-myhunt250-1112: tier 칸 4 = 4단계에만 고르는 줄 → kind 이름 끝 "_t4"(MyHuntDrop.Only4 · ProbLogic과 같음)
+    const kindName = (r.tier || "") === "4" ? `${r.kind}_t4` : r.kind;
+    const line = `M|${kindName}|${r.itemId}|${ppm(num(r.rate) * mul)}|${mhPick[r.kind]}`;
     rows.push(line);
     if (r.kind === "rare") srows.push(line);
     // 귀한 드롭 단계 줄(아래 tiers) — 1·2단계 복제 = 확률 × 단계 배율 · 창 [주문서] 탭 끝 단계별 줄이라 주문서 지문에도

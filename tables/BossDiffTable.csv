@@ -63,3 +63,8 @@ pqboss_papapixie,H,eq_weapon_120:1:20|eq_earring_120:1:6|sc_belt_ms_100:1:20|sc_
 pqboss_davyjohn,H,eq_weapon_120:1:20|eq_earring_120:1:6|sc_belt_ms_100:1:20|sc_belt_ms_60:1:20|sc_belt_ms_10:1:20|sc_shield_pm_100:1:20|sc_shield_pm_60:1:20|sc_shield_pm_10:1:20|sc_belt_ms_d70:1:20|sc_shield_pm_d70:1:8|sc_belt_ms_d30:1:2.8|sc_shield_pm_d30:1:2.8,1
 pqboss_poisongolem,H,eq_weapon_120:1:20|eq_earring_120:1:6|sc_belt_ms_100:1:20|sc_belt_ms_60:1:20|sc_belt_ms_10:1:20|sc_shield_pm_100:1:20|sc_shield_pm_60:1:20|sc_shield_pm_10:1:20|sc_belt_ms_d70:1:20|sc_shield_pm_d70:1:8|sc_belt_ms_d30:1:2.8|sc_shield_pm_d30:1:2.8,1
 pqboss_frankenroid,H,eq_weapon_120:1:20|eq_earring_120:1:6|sc_belt_ms_100:1:20|sc_belt_ms_60:1:20|sc_belt_ms_10:1:20|sc_shield_pm_100:1:20|sc_shield_pm_60:1:20|sc_shield_pm_10:1:20|sc_belt_ms_d70:1:20|sc_shield_pm_d70:1:8|sc_belt_ms_d30:1:2.8|sc_shield_pm_d30:1:2.8,1
+soloboss_dodo,H,eq_pendant_120:1:10|eq_weapon_120:1:2|eq_overall_120:1:1|eq_glove_120:1:1|eq_shoes_120:1:1|eq_cape_120:1:1|boss_scbox_d70:1:28|boss_scbox_d30:1:11.2,
+soloboss_lilynoch,H,eq_belt_120:1:10|eq_weapon_120:1:2|eq_overall_120:1:1|eq_glove_120:1:1|eq_shoes_120:1:1|eq_cape_120:1:1|boss_scbox_d70:1:28|boss_scbox_d30:1:11.2,
+soloboss_lyka,H,eq_ring_120:1:10|eq_weapon_120:1:2|eq_overall_120:1:1|eq_glove_120:1:1|eq_shoes_120:1:1|eq_cape_120:1:1|boss_scbox_d70:1:28|boss_scbox_d30:1:11.2,
+soloboss_dragonica,H,eq_earring_120:1:10|eq_weapon_120:1:2|eq_overall_120:1:1|eq_glove_120:1:1|eq_shoes_120:1:1|eq_cape_120:1:1|boss_scbox_d70:1:28|boss_scbox_d30:1:11.2,
+soloboss_dragonrider,H,eq_sub_120:1:10|eq_weapon_120:1:2|eq_overall_120:1:1|eq_glove_120:1:1|eq_shoes_120:1:1|eq_cape_120:1:1|boss_scbox_d70:1:28|boss_scbox_d30:1:11.2,

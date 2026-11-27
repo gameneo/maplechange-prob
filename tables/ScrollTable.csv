@@ -59,3 +59,8 @@ sc_ring_ms_d30,반지 주스탯 주문서 30%,ring,dark,30,50,
 sc_white,백의 주문서 10%,*,white,10,10,
 2049000,백의 주문서 10%,*,white,10,10,sc_white
 2470000,황금 망치,*,hammer,100,0,
+sc_shoulder_ms_100,어깨장식 주스탯 주문서 100%,shoulder,normal,100,0,
+sc_shoulder_ms_60,어깨장식 주스탯 주문서 60%,shoulder,normal,60,0,
+sc_shoulder_ms_10,어깨장식 주스탯 주문서 10%,shoulder,normal,10,0,
+sc_shoulder_ms_d70,어깨장식 주스탯 주문서 70%,shoulder,dark,70,30,
+sc_shoulder_ms_d30,어깨장식 주스탯 주문서 30%,shoulder,dark,30,50,

@@ -1603,6 +1603,11 @@ S|sc_shoes_ms_10|10|0
 S|sc_shoes_ms_60|60|0
 S|sc_shoes_ms_d30|30|50
 S|sc_shoes_ms_d70|70|30
+S|sc_shoulder_ms_100|100|0
+S|sc_shoulder_ms_10|10|0
+S|sc_shoulder_ms_60|60|0
+S|sc_shoulder_ms_d30|30|50
+S|sc_shoulder_ms_d70|70|30
 S|sc_weapon_pm_100|100|0
 S|sc_weapon_pm_10|10|0
 S|sc_weapon_pm_60|60|0
